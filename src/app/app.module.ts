@@ -16,7 +16,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 // Módulos
 import { AppRoutingModule } from './app-routing.module';
 
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { ChartsModule } from 'ng2-charts';
 
 
 import { AppComponent } from './app.component';
@@ -52,6 +54,7 @@ import { OrdenIngresoPipe } from './pipes/orden-ingreso.pipe';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    ChartsModule,
     AngularFireAuthModule,
     StoreModule.forRoot( appReducers ),
     StoreDevtoolsModule.instrument({

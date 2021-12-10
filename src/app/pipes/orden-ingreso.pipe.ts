@@ -7,7 +7,7 @@ import { IngresoEgreso } from '../models/ingreso-egreso.model';
 export class OrdenIngresoPipe implements PipeTransform {
 
   transform(items: IngresoEgreso[]): IngresoEgreso[] {
-    return items.sort( (a,b)=> {
+    return items.slice().sort( (a,b)=> {
       if (a.tipo === 'ingreso'){
         return -1;
       }else{
