@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     // .subscribe( ui => this.cargando = ui.isLoading );// Esto funcionaría igualmente
     .subscribe( ui => {
       this.cargando = ui.isLoading;
-      console.log('cargando subs');
+      // console.log('cargando subs');
 
     })
 
